@@ -1,0 +1,12 @@
+[Unit]
+Description=Mount unit for gnome-logs, revision 37
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/gnome-logs_37.snap
+Where=/snap/gnome-logs/37
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+
+[Install]
+WantedBy=multi-user.target

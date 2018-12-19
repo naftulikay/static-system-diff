@@ -66,3 +66,4 @@ rtkit:x:126:
 saned:x:127:
 naftuli:x:1000:
 sambashare:x:128:naftuli
+vboxsf:x:999:

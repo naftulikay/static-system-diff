@@ -1,1 +1,9 @@
-/lib/systemd/system/acpid.path
+[Unit]
+Description=ACPI Events Check
+
+[Path]
+DirectoryNotEmpty=/etc/acpi/events/
+
+[Install]
+WantedBy=paths.target
+

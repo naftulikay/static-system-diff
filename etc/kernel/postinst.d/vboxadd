@@ -1,0 +1,5 @@
+#!/bin/sh
+# Run in the background so that we can wait in case the package installer has
+# not yet installed the kernel headers we need.
+KERN_VER="${1}" /sbin/rcvboxadd quicksetup &
+exit 0

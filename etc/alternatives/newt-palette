@@ -1,1 +1,9 @@
-/etc/newt/palette.ubuntu
+root=,magenta
+checkbox=,magenta
+entry=,magenta
+label=magenta,
+actlistbox=,magenta
+helpline=,magenta
+roottext=,magenta
+emptyscale=magenta
+disabledentry=magenta,

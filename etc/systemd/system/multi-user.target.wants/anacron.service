@@ -1,1 +1,12 @@
-/lib/systemd/system/anacron.service
+[Unit]
+Description=Run anacron jobs
+After=time-sync.target
+ConditionACPower=true
+Documentation=man:anacron man:anacrontab
+
+[Service]
+ExecStart=/usr/sbin/anacron -dsq
+IgnoreSIGPIPE=false
+
+[Install]
+WantedBy=multi-user.target

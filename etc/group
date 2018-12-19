@@ -64,3 +64,4 @@ geoclue:x:124:
 gdm:x:125:
 naftuli:x:1000:
 sambashare:x:126:naftuli
+vboxsf:x:999:

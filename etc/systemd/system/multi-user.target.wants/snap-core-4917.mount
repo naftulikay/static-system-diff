@@ -1,1 +1,12 @@
-/etc/systemd/system/snap-core-4917.mount
+[Unit]
+Description=Mount unit for core, revision 4917
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/core_4917.snap
+Where=/snap/core/4917
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+
+[Install]
+WantedBy=multi-user.target

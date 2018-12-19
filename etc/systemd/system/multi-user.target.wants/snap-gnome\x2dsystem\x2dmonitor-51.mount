@@ -1,1 +1,12 @@
-/etc/systemd/system/snap-gnome\x2dsystem\x2dmonitor-51.mount
+[Unit]
+Description=Mount unit for gnome-system-monitor, revision 51
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/gnome-system-monitor_51.snap
+Where=/snap/gnome-system-monitor/51
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+
+[Install]
+WantedBy=multi-user.target

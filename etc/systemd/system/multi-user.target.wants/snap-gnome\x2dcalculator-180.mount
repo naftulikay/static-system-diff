@@ -1,1 +1,12 @@
-/etc/systemd/system/snap-gnome\x2dcalculator-180.mount
+[Unit]
+Description=Mount unit for gnome-calculator, revision 180
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/gnome-calculator_180.snap
+Where=/snap/gnome-calculator/180
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+
+[Install]
+WantedBy=multi-user.target

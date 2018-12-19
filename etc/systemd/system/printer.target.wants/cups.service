@@ -1,1 +1,12 @@
-/lib/systemd/system/cups.service
+[Unit]
+Description=CUPS Scheduler
+Documentation=man:cupsd(8)
+
+[Service]
+ExecStart=/usr/sbin/cupsd -l
+Type=simple
+Restart=always
+
+[Install]
+Also=cups.socket cups.path
+WantedBy=printer.target

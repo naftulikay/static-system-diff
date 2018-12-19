@@ -1,0 +1,23 @@
+TARGETS = rsyslog uuidd unattended-upgrades killprocs apport thermald dbus kerneloops irqbalance speech-dispatcher whoopsie single rsync cron acpid anacron avahi-daemon lightdm bluetooth cups-browsed cups saned plymouth rc.local ondemand grub-common
+INTERACTIVE =
+thermald: rsyslog
+dbus: rsyslog
+kerneloops: rsyslog
+irqbalance: rsyslog
+speech-dispatcher: rsyslog
+whoopsie: rsyslog
+single: killprocs
+rsync: rsyslog
+cron: rsyslog
+acpid: rsyslog
+anacron: rsyslog
+avahi-daemon: dbus rsyslog
+lightdm: dbus acpid
+bluetooth: rsyslog dbus
+cups-browsed: rsyslog
+cups: rsyslog
+saned: rsyslog dbus
+plymouth: cups-browsed rsyslog uuidd thermald avahi-daemon dbus kerneloops lightdm unattended-upgrades bluetooth irqbalance speech-dispatcher whoopsie cups saned apport rsync cron acpid anacron
+rc.local: cups-browsed rsyslog uuidd thermald avahi-daemon dbus kerneloops lightdm unattended-upgrades bluetooth irqbalance speech-dispatcher whoopsie cups saned apport rsync cron acpid anacron
+ondemand: cups-browsed rsyslog uuidd thermald avahi-daemon dbus kerneloops lightdm unattended-upgrades bluetooth irqbalance speech-dispatcher whoopsie cups saned apport rsync cron acpid anacron
+grub-common: cups-browsed rsyslog uuidd thermald avahi-daemon dbus kerneloops lightdm unattended-upgrades bluetooth irqbalance speech-dispatcher whoopsie cups saned apport rsync cron acpid anacron

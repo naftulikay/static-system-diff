@@ -1,1 +1,3 @@
-/usr/share/icons/elementary/cursor.theme
+[Icon Theme]
+Name=elementary
+Inherits=elementary

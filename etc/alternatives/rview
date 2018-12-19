@@ -1,1 +1,2 @@
-/usr/bin/vim.tiny
+#!/bin/sh
+exec /usr/bin/nvim -RZ "$@"

@@ -18,7 +18,7 @@ voice:*::
 cdrom:*::naftuli
 floppy:*::
 tape:*::
-sudo:*::
+sudo:*::naftuli
 audio:*::pulse
 dip:*::naftuli
 www-data:*::

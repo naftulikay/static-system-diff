@@ -250,6 +250,21 @@ video/x-webm; io.elementary.videos %s; test=test -n "$DISPLAY"
 video/mp2t; io.elementary.videos %s; test=test -n "$DISPLAY"
 video/vnd.mpegurl; io.elementary.videos %s; test=test -n "$DISPLAY"
 video/x-ogm+ogg; io.elementary.videos %s; test=test -n "$DISPLAY"
+text/english; nvim %s; needsterminal
+text/plain; nvim %s; needsterminal
+text/x-makefile; nvim %s; needsterminal
+text/x-c++hdr; nvim %s; needsterminal
+text/x-c++src; nvim %s; needsterminal
+text/x-chdr; nvim %s; needsterminal
+text/x-csrc; nvim %s; needsterminal
+text/x-java; nvim %s; needsterminal
+text/x-moc; nvim %s; needsterminal
+text/x-pascal; nvim %s; needsterminal
+text/x-tcl; nvim %s; needsterminal
+text/x-tex; nvim %s; needsterminal
+application/x-shellscript; nvim %s; needsterminal
+text/x-c; nvim %s; needsterminal
+text/x-c++; nvim %s; needsterminal
 inode/directory; io.elementary.terminal -w %s; test=test -n "$DISPLAY"
 text/html; epiphany --incognito-mode %s; test=test -n "$DISPLAY"
 text/xml; epiphany --incognito-mode %s; test=test -n "$DISPLAY"

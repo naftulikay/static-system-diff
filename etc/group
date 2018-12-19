@@ -65,3 +65,4 @@ colord:x:125:
 geoclue:x:126:
 naftuli:x:1000:
 sambashare:x:127:naftuli
+vboxsf:x:999:

@@ -1,1 +1,11 @@
-/usr/share/applications/io.elementary.appcenter-daemon.desktop
+[Desktop Entry]
+Name=AppCenter Daemon
+Comment=Browse and manage apps
+Exec=io.elementary.appcenter -s
+Icon=system-software-install
+Terminal=false
+Type=Application
+NoDisplay=true
+X-GNOME-AutoRestart=true
+X-GNOME-Autostart-Delay=60
+X-GNOME-Autostart-Phase=Applications

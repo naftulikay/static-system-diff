@@ -1,1 +1,10 @@
-/usr/share/applications/pantheon-parental-controls-client.desktop
+[Desktop Entry]
+Name=Parental Controls Client
+Exec=/usr/lib/x86_64-linux-gnu/pantheon-parental-controls-client
+Comment=Show parental control restrictions
+Icon=preferences-system-parental-controls
+Terminal=false
+Type=Application
+NoDisplay=true
+X-GNOME-AutoRestart=true
+X-GNOME-Autostart-Phase=Applications

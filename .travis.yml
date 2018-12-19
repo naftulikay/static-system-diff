@@ -2,8 +2,8 @@
 dist: trusty
 sudo: false
 
-# always pass on master
-script: 'true'
+# always fail to prevent merge
+script: 'false'
 
 notifications:
   email:
